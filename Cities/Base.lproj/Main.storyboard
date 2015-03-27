@@ -74,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="1366" y="543"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Attributions Table View Controller-->
         <scene sceneID="Jjk-88-qhp">
             <objects>
-                <tableViewController id="QPi-Ae-1jS" sceneMemberID="viewController">
+                <tableViewController id="QPi-Ae-1jS" customClass="AttributionsTableViewController" customModule="Cities" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="3hk-oH-PZD">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -85,14 +85,16 @@
                         <sections>
                             <tableViewSection id="k7x-4k-uR3">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" selectionStyle="default" indentationWidth="10" textLabel="Y9D-Zd-3dP" rowHeight="112" style="IBUITableViewCellStyleDefault" id="vRS-DY-Q3y">
+                                    <tableViewCell contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" selectionStyle="none" indentationWidth="10" textLabel="Y9D-Zd-3dP" rowHeight="175" style="IBUITableViewCellStyleDefault" id="vRS-DY-Q3y">
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vRS-DY-Q3y" id="8gr-fE-NGZ">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" tableViewCell="vRS-DY-Q3y" id="8gr-fE-NGZ">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Y9D-Zd-3dP">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Y9D-Zd-3dP">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <string key="text">Annual Estimates of the Resident Population for Incorporated Places over 50,000, Ranked by July 1, 2013 Population: April 1, 2010 to July 1, 2013" (CSV). 2013 Population Estimates. United States Census Bureau, Population Division. May 2013. Retrieved May 22, 2014.</string>
+                                                    <string key="text">Annual Estimates of the Resident Population for Incorporated Places of 50,000 or More, Ranked by July 1, 2013 Population: April 1, 2010 to July 1, 2013 
+Source: U.S. Census Bureau, Population Division 
+Release Date: May 2014</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -100,16 +102,20 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" selectionStyle="default" indentationWidth="10" textLabel="77K-Ob-bNf" rowHeight="54" style="IBUITableViewCellStyleDefault" id="lIf-gG-q21">
+                                    <tableViewCell contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" selectionStyle="none" indentationWidth="10" textLabel="77K-Ob-bNf" rowHeight="130" style="IBUITableViewCellStyleDefault" id="lIf-gG-q21">
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lIf-gG-q21" id="QZE-vg-7lK">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" tableViewCell="lIf-gG-q21" id="QZE-vg-7lK">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="http://factfinder.census.gov/faces/tableservices/jsf/pages/productview.xhtml?src=bkmk" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="77K-Ob-bNf">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="http://factfinder2.census.gov/bkmk/table/1.0/en/PEP/2013/PEPANNRSIP.US12A" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="77K-Ob-bNf">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <gestureRecognizers/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="F1w-d6-hfb" appends="YES" id="3BY-lo-zlZ"/>
+                                                    </connections>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -131,6 +137,11 @@
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Pf-2Y-QgP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="F1w-d6-hfb">
+                    <connections>
+                        <action selector="linkTapped" destination="QPi-Ae-1jS" id="LWd-4J-2Rt"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2906" y="543"/>
         </scene>

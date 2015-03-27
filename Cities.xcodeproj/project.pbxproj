@@ -16,6 +16,7 @@
 		4B65C33E1AC3ACEB0053DA33 /* CitiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B65C33D1AC3ACEB0053DA33 /* CitiesTableViewController.swift */; };
 		4B65C3421AC3AD8D0053DA33 /* CitiesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B65C3411AC3AD8D0053DA33 /* CitiesManager.swift */; };
 		4B65C3441AC3AD960053DA33 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B65C3431AC3AD960053DA33 /* City.swift */; };
+		4B65C3461AC500190053DA33 /* AttributionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B65C3451AC500190053DA33 /* AttributionsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		4B65C33D1AC3ACEB0053DA33 /* CitiesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesTableViewController.swift; sourceTree = "<group>"; };
 		4B65C3411AC3AD8D0053DA33 /* CitiesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesManager.swift; sourceTree = "<group>"; };
 		4B65C3431AC3AD960053DA33 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		4B65C3451AC500190053DA33 /* AttributionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributionsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				4B65C3181AC3A5740053DA33 /* AppDelegate.swift */,
 				4B65C33D1AC3ACEB0053DA33 /* CitiesTableViewController.swift */,
+				4B65C3451AC500190053DA33 /* AttributionsTableViewController.swift */,
 				4B65C31C1AC3A5740053DA33 /* Main.storyboard */,
 				4B65C31F1AC3A5740053DA33 /* Images.xcassets */,
 				4B65C3211AC3A5740053DA33 /* LaunchScreen.xib */,
@@ -240,6 +243,7 @@
 			files = (
 				4B65C33E1AC3ACEB0053DA33 /* CitiesTableViewController.swift in Sources */,
 				4B65C3191AC3A5740053DA33 /* AppDelegate.swift in Sources */,
+				4B65C3461AC500190053DA33 /* AttributionsTableViewController.swift in Sources */,
 				4B65C3441AC3AD960053DA33 /* City.swift in Sources */,
 				4B65C3421AC3AD8D0053DA33 /* CitiesManager.swift in Sources */,
 			);
