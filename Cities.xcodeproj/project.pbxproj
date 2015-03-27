@@ -89,8 +89,8 @@
 				4B65C33D1AC3ACEB0053DA33 /* CitiesTableViewController.swift */,
 				4B65C3451AC500190053DA33 /* AttributionsTableViewController.swift */,
 				4B65C31C1AC3A5740053DA33 /* Main.storyboard */,
-				4B65C31F1AC3A5740053DA33 /* Images.xcassets */,
 				4B65C3211AC3A5740053DA33 /* LaunchScreen.xib */,
+				4B65C31F1AC3A5740053DA33 /* Images.xcassets */,
 				4B65C3401AC3AD7A0053DA33 /* Data Access Layer */,
 				4B65C33A1AC3AC550053DA33 /* Resources */,
 				4B65C3161AC3A5740053DA33 /* Supporting Files */,
@@ -443,6 +443,7 @@
 				4B65C3341AC3A5750053DA33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4B65C3351AC3A5750053DA33 /* Build configuration list for PBXNativeTarget "CitiesTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +452,7 @@
 				4B65C3371AC3A5750053DA33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
