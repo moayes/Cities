@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4B65C3191AC3A5740053DA33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B65C3181AC3A5740053DA33 /* AppDelegate.swift */; };
-		4B65C31B1AC3A5740053DA33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B65C31A1AC3A5740053DA33 /* ViewController.swift */; };
 		4B65C31E1AC3A5740053DA33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B65C31C1AC3A5740053DA33 /* Main.storyboard */; };
 		4B65C3201AC3A5740053DA33 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B65C31F1AC3A5740053DA33 /* Images.xcassets */; };
 		4B65C3231AC3A5740053DA33 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B65C3211AC3A5740053DA33 /* LaunchScreen.xib */; };
 		4B65C32F1AC3A5750053DA33 /* CitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B65C32E1AC3A5750053DA33 /* CitiesTests.swift */; };
+		4B65C33C1AC3AC550053DA33 /* CensusData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B65C33B1AC3AC550053DA33 /* CensusData.plist */; };
+		4B65C33E1AC3ACEB0053DA33 /* CitiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B65C33D1AC3ACEB0053DA33 /* CitiesTableViewController.swift */; };
+		4B65C3421AC3AD8D0053DA33 /* CitiesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B65C3411AC3AD8D0053DA33 /* CitiesManager.swift */; };
+		4B65C3441AC3AD960053DA33 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B65C3431AC3AD960053DA33 /* City.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +32,16 @@
 		4B65C3131AC3A5740053DA33 /* Cities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B65C3171AC3A5740053DA33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B65C3181AC3A5740053DA33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4B65C31A1AC3A5740053DA33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4B65C31D1AC3A5740053DA33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B65C31F1AC3A5740053DA33 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4B65C3221AC3A5740053DA33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4B65C3281AC3A5740053DA33 /* CitiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CitiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B65C32D1AC3A5750053DA33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B65C32E1AC3A5750053DA33 /* CitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesTests.swift; sourceTree = "<group>"; };
+		4B65C33B1AC3AC550053DA33 /* CensusData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CensusData.plist; sourceTree = "<group>"; };
+		4B65C33D1AC3ACEB0053DA33 /* CitiesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesTableViewController.swift; sourceTree = "<group>"; };
+		4B65C3411AC3AD8D0053DA33 /* CitiesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesManager.swift; sourceTree = "<group>"; };
+		4B65C3431AC3AD960053DA33 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +84,12 @@
 			isa = PBXGroup;
 			children = (
 				4B65C3181AC3A5740053DA33 /* AppDelegate.swift */,
-				4B65C31A1AC3A5740053DA33 /* ViewController.swift */,
+				4B65C33D1AC3ACEB0053DA33 /* CitiesTableViewController.swift */,
 				4B65C31C1AC3A5740053DA33 /* Main.storyboard */,
 				4B65C31F1AC3A5740053DA33 /* Images.xcassets */,
 				4B65C3211AC3A5740053DA33 /* LaunchScreen.xib */,
+				4B65C3401AC3AD7A0053DA33 /* Data Access Layer */,
+				4B65C33A1AC3AC550053DA33 /* Resources */,
 				4B65C3161AC3A5740053DA33 /* Supporting Files */,
 			);
 			path = Cities;
@@ -110,6 +118,23 @@
 				4B65C32D1AC3A5750053DA33 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4B65C33A1AC3AC550053DA33 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4B65C33B1AC3AC550053DA33 /* CensusData.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4B65C3401AC3AD7A0053DA33 /* Data Access Layer */ = {
+			isa = PBXGroup;
+			children = (
+				4B65C3411AC3AD8D0053DA33 /* CitiesManager.swift */,
+				4B65C3431AC3AD960053DA33 /* City.swift */,
+			);
+			path = "Data Access Layer";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B65C31E1AC3A5740053DA33 /* Main.storyboard in Resources */,
+				4B65C33C1AC3AC550053DA33 /* CensusData.plist in Resources */,
 				4B65C3231AC3A5740053DA33 /* LaunchScreen.xib in Resources */,
 				4B65C3201AC3A5740053DA33 /* Images.xcassets in Resources */,
 			);
@@ -212,8 +238,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B65C31B1AC3A5740053DA33 /* ViewController.swift in Sources */,
+				4B65C33E1AC3ACEB0053DA33 /* CitiesTableViewController.swift in Sources */,
 				4B65C3191AC3A5740053DA33 /* AppDelegate.swift in Sources */,
+				4B65C3441AC3AD960053DA33 /* City.swift in Sources */,
+				4B65C3421AC3AD8D0053DA33 /* CitiesManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
