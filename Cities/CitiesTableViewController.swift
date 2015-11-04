@@ -87,7 +87,7 @@ class CitiesTableViewController: UITableViewController {
     cell.textLabel?.text = city.name
     cell.detailTextLabel?.text = census.formattedPopulation
     return cell
-}
+  }
   
   // MARK: UIGestureRecognizer
   
