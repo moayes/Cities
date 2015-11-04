@@ -57,7 +57,7 @@ class CitiesManager {
     let citiesData = NSArray(contentsOfURL: dataURL)
     
     var cities: Array<City> = []
-    citiesData?.enumerateObjectsUsingBlock({ (cityData: AnyObject!, index: Int, stop: UnsafeMutablePointer<ObjCBool>) -> Void in
+    citiesData?.enumerateObjectsUsingBlock({ (cityData: AnyObject, index: Int, stop: UnsafeMutablePointer<ObjCBool>) -> Void in
       let city = City()
       if cityData is NSDictionary {
         let dictionary = cityData as! NSDictionary
