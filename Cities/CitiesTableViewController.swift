@@ -80,7 +80,7 @@ class CitiesTableViewController: UITableViewController {
   }
   
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("CityInformationCellIdentifier") as! UITableViewCell
+    let cell = tableView.dequeueReusableCellWithIdentifier("CityInformationCellIdentifier", forIndexPath: indexPath)
     
     let city: City = cities[indexPath.row] as! City
     let census = city.censuses[selectedYear.rawValue]
@@ -161,7 +161,10 @@ class CitiesTableViewController: UITableViewController {
     
     // Make an image from the input view.
     UIGraphicsBeginImageContextWithOptions(inputView.bounds.size, false, 0)
-    inputView.layer.renderInContext(UIGraphicsGetCurrentContext())
+    if let context = UIGraphicsGetCurrentContext()
+    {
+        inputView.layer.renderInContext(context)
+    }
     let image = UIGraphicsGetImageFromCurrentImageContext()
     UIGraphicsEndImageContext();
     
