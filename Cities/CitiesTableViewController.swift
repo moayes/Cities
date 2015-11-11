@@ -94,9 +94,11 @@ class CitiesTableViewController: UITableViewController {
   func longPressGestureRecognized(gesture: UILongPressGestureRecognizer) {
     let state: UIGestureRecognizerState = gesture.state;
     let location: CGPoint = gesture.locationInView(tableView)
-    let indexPath: NSIndexPath? = tableView.indexPathForRowAtPoint(location)
+    var indexPath: NSIndexPath? = tableView.indexPathForRowAtPoint(location)
+    
+    // if indexPath is null, that means we took our dragged cell off the bottom of the table
     if indexPath == nil {
-      return
+        indexPath = NSIndexPath(forRow: cities.count - 1, inSection: 0)
     }
     
     switch (state) {
